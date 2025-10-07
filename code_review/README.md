@@ -4,28 +4,28 @@ This directory contains a comprehensive collection of AI-powered code review pro
 
 ## 📁 Structure
 
-```
+```text
 code_review/
 ├── code_review_prompts_summary.md          # Main guide with TOC and usage instructions
-├── 1-comprehensive-pr-review/              # All-encompassing review
+├── 01-comprehensive-pr-review/              # All-encompassing review
 │   └── prompt.md
-├── 2-security-focused-review/              # STRIDE threat modeling
+├── 02-security-focused-review/              # STRIDE threat modeling
 │   └── prompt.md
-├── 3-performance-optimization-review/      # Performance analysis
+├── 03-performance-optimization-review/      # Performance analysis
 │   └── prompt.md
-├── 4-architecture-design-review/           # SOLID & design patterns
+├── 04-architecture-design-review/           # SOLID & design patterns
 │   └── prompt.md
-├── 5-quick-scan/                           # Rapid 2-minute triage
+├── 05-quick-scan/                           # Rapid 2-minute triage
 │   └── prompt.md
-├── 6-language-specific/                    # Language-specific reviews
+├── 06-language-specific/                    # Language-specific reviews
 │   ├── README.md
 │   ├── python-review.md
 │   └── javascript-typescript-review.md
-├── 7-test-coverage-quality/                # F.I.R.S.T principles
+├── 07-test-coverage-quality/                # F.I.R.S.T principles
 │   └── prompt.md
-├── 8-breaking-changes-api/                 # API compatibility
+├── 08-breaking-changes-api/                 # API compatibility
 │   └── prompt.md
-├── 9-documentation-review/                 # Documentation quality
+├── 09-documentation-review/                 # Documentation quality
 │   └── prompt.md
 └── 10-cross-file-impact/                   # System-wide analysis
     └── prompt.md
@@ -36,10 +36,10 @@ code_review/
 1. **Start here**: Read [code_review_prompts_summary.md](./code_review_prompts_summary.md) for an overview and usage guidance
 
 2. **Choose your review type**: Select the appropriate prompt based on your needs:
-   - **Quick check?** → Use [5-quick-scan](./5-quick-scan/prompt.md)
-   - **Comprehensive review?** → Use [1-comprehensive-pr-review](./1-comprehensive-pr-review/prompt.md)
-   - **Security concerns?** → Use [2-security-focused-review](./2-security-focused-review/prompt.md)
-   - **Performance critical?** → Use [3-performance-optimization-review](./3-performance-optimization-review/prompt.md)
+   - **Quick check?** → Use [05-quick-scan](./05-quick-scan/prompt.md)
+   - **Comprehensive review?** → Use [01-comprehensive-pr-review](./01-comprehensive-pr-review/prompt.md)
+   - **Security concerns?** → Use [02-security-focused-review](./02-security-focused-review/prompt.md)
+   - **Performance critical?** → Use [03-performance-optimization-review](./03-performance-optimization-review/prompt.md)
 
 3. **Customize the prompt**: Replace `{PLACEHOLDERS}` with your PR details
 
@@ -50,41 +50,48 @@ code_review/
 ## 📋 Prompt Categories
 
 ### Core Reviews
+
 - **Comprehensive PR Review**: Covers all aspects - quality, security, performance, architecture
 - **Quick Scan**: 2-minute rapid triage for common issues
 
 ### Specialized Reviews
+
 - **Security-Focused**: STRIDE + OWASP analysis
 - **Performance Optimization**: Bottleneck detection and optimization
 - **Architecture & Design**: SOLID principles and design patterns
 - **Test Coverage & Quality**: F.I.R.S.T principles assessment
 
 ### Integration Reviews
+
 - **Breaking Changes & API**: Semantic versioning and compatibility
 - **Documentation Review**: Quality and completeness
 - **Cross-File Impact**: System-wide integration analysis
 
 ### Language-Specific
+
 - **Python**: PEP 8, type hints, modern features
 - **JavaScript/TypeScript**: ES6+, TypeScript, React
 
 ## 🎯 Usage Patterns
 
 ### Pattern 1: Quick Triage
-```
+
+```text
 1. Quick Scan (2 min)
 2. If issues found → Run targeted review
 ```
 
 ### Pattern 2: Standard PR
-```
+
+```text
 1. Quick Scan
 2. Comprehensive Review
 3. Test Coverage Review
 ```
 
 ### Pattern 3: High-Risk Changes
-```
+
+```text
 1. Security-Focused Review
 2. Comprehensive Review
 3. Test Coverage Review
@@ -92,7 +99,8 @@ code_review/
 ```
 
 ### Pattern 4: Major Refactoring
-```
+
+```text
 1. Architecture & Design Review
 2. Breaking Changes & API Review
 3. Cross-File Impact Analysis
@@ -103,6 +111,7 @@ code_review/
 ## 🔧 Customization
 
 Each prompt can be customized by:
+
 - Adding project-specific coding standards
 - Adjusting severity thresholds
 - Including team conventions
@@ -112,6 +121,7 @@ Each prompt can be customized by:
 ## 📊 Output Format
 
 All prompts produce structured output with:
+
 - **Severity levels**: Critical 🔴, Important 🟡, Minor 🔵
 - **Actionable recommendations**: Specific fixes with code examples
 - **Approval status**: Ready/Changes Needed/Blocked
@@ -120,6 +130,7 @@ All prompts produce structured output with:
 ## 🤝 Contributing
 
 To add new prompts or improve existing ones:
+
 1. Follow the established structure
 2. Include comprehensive checklists
 3. Provide clear output formats

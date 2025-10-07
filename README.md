@@ -38,46 +38,56 @@ This repository contains production-ready prompt templates engineered for profes
 The **[code_review](./code_review/)** directory contains 37+ specialized prompts for comprehensive code review across multiple dimensions:
 
 #### General Review Types (10 prompts)
-1. **[Comprehensive PR Review](./code_review/1-comprehensive-pr-review/prompt.md)** - All-encompassing analysis covering quality, security, performance, and architecture
-2. **[Security-Focused Review](./code_review/2-security-focused-review/prompt.md)** - STRIDE threat modeling and vulnerability analysis
-3. **[Performance Optimization Review](./code_review/3-performance-optimization-review/prompt.md)** - Bottleneck identification and optimization opportunities
-4. **[Architecture & Design Review](./code_review/4-architecture-design-review/prompt.md)** - SOLID principles, design patterns, and system design
-5. **[Quick Scan](./code_review/5-quick-scan/prompt.md)** - Rapid 2-minute triage for common issues
-6. **[Test Coverage & Quality Review](./code_review/7-test-coverage-quality/prompt.md)** - F.I.R.S.T principles and test assessment
-7. **[Breaking Changes & API Review](./code_review/8-breaking-changes-api/prompt.md)** - API compatibility and semantic versioning
-8. **[Documentation Review](./code_review/9-documentation-review/prompt.md)** - Documentation quality and completeness
+
+1. **[Comprehensive PR Review](./code_review/01-comprehensive-pr-review/prompt.md)** - All-encompassing analysis covering quality, security, performance, and architecture
+2. **[Security-Focused Review](./code_review/02-security-focused-review/prompt.md)** - STRIDE threat modeling and vulnerability analysis
+3. **[Performance Optimization Review](./code_review/03-performance-optimization-review/prompt.md)** - Bottleneck identification and optimization opportunities
+4. **[Architecture & Design Review](./code_review/04-architecture-design-review/prompt.md)** - SOLID principles, design patterns, and system design
+5. **[Quick Scan](./code_review/05-quick-scan/prompt.md)** - Rapid 2-minute triage for common issues
+6. **[Test Coverage & Quality Review](./code_review/07-test-coverage-quality/prompt.md)** - F.I.R.S.T principles and test assessment
+7. **[Breaking Changes & API Review](./code_review/08-breaking-changes-api/prompt.md)** - API compatibility and semantic versioning
+8. **[Documentation Review](./code_review/09-documentation-review/prompt.md)** - Documentation quality and completeness
 9. **[Cross-File Impact Analysis](./code_review/10-cross-file-impact/prompt.md)** - System-wide integration analysis
-10. **[Python Review](./code_review/6-language-stack-specific/python-review.md)** - Python-specific best practices
+10. **[Python Review](./code_review/06-language-stack-specific/python-review.md)** - Python-specific best practices
 
 #### Language & Framework Specific Reviews (27 prompts)
 
 **JavaScript/TypeScript Core** (6 prompts)
+
 - Vanilla JS (Frontend/Backend), ES6+ (Frontend/Backend), TypeScript (Frontend/Backend)
 
 **React Ecosystem** (5 prompts)
+
 - React Hooks (JS/TS), React Classes (JS/TS), React Native
 
 **Angular** (2 prompts)
+
 - AngularJS 1.x, Angular 2+
 
 **Vue** (4 prompts)
+
 - Vue 2 (JS/TS), Vue 3 (JS/TS)
 
 **Svelte** (2 prompts)
+
 - Svelte (JS/TS)
 
 **Meta-Frameworks** (2 prompts)
+
 - Next.js (App/Pages Router, SSR/SSG)
 - Nuxt.js (Nuxt 3)
 
 **Backend Frameworks** (2 prompts)
+
 - NestJS (Enterprise Node.js)
 - Express.js
 
 **API & GraphQL** (1 prompt)
+
 - GraphQL schema, resolvers, performance
 
 **Testing** (1 prompt)
+
 - Jest, Vitest, Cypress (Unit/Integration/E2E)
 
 📖 **[View Complete Code Review Documentation](./code_review/code_review_prompts_summary.md)**
@@ -136,9 +146,11 @@ To maximize the effectiveness of these prompts with GPT-5 and other advanced mod
 ### Meta-Prompting Tags Explained
 
 #### `<persistence>`
+
 **Purpose**: Ensures the AI agent completes the entire task autonomously without premature termination.
 
 **Key Behaviors**:
+
 - Continue working until the user's query is completely resolved
 - Only terminate when the problem is definitively solved
 - Never stop when encountering uncertainty—research or deduce the most reasonable approach
@@ -146,6 +158,7 @@ To maximize the effectiveness of these prompts with GPT-5 and other advanced mod
 - Act as an autonomous agent, not a conversational assistant
 
 **Example**:
+
 ```xml
 <persistence>
 - You are an agent - please keep going until the user's query is completely resolved
@@ -158,9 +171,11 @@ To maximize the effectiveness of these prompts with GPT-5 and other advanced mod
 ---
 
 #### `<exploration>`
+
 **Purpose**: Guides thorough investigation and planning before implementation.
 
 **Key Behaviors**:
+
 - Never guess—always use tools to read files and gather information
 - Decompose requests into explicit requirements, unclear areas, and hidden assumptions
 - Map the scope: identify relevant codebase regions, files, functions, or libraries
@@ -170,6 +185,7 @@ To maximize the effectiveness of these prompts with GPT-5 and other advanced mod
 - Formulate an execution plan with research steps and testing strategy
 
 **Example**:
+
 ```xml
 <exploration>
 If you are not sure about file content or codebase structure, use your tools to read files and gather information: do NOT guess or make up an answer.
@@ -186,9 +202,11 @@ Before coding, always:
 ---
 
 #### `<tool_preambles>`
+
 **Purpose**: Structures AI communication for clarity and transparency.
 
 **Key Behaviors**:
+
 - Begin by rephrasing the user's goal in friendly, clear, concise language
 - Immediately outline a structured plan detailing each logical step
 - Narrate each step succinctly and sequentially during execution
@@ -196,6 +214,7 @@ Before coding, always:
 - Finish by summarizing completed work distinctly from the upfront plan
 
 **Example**:
+
 ```xml
 <tool_preambles>
 - Always begin by rephrasing the user's goal in a friendly, clear, and concise manner
@@ -208,9 +227,11 @@ Before coding, always:
 ---
 
 #### `<self_reflection>`
+
 **Purpose**: Ensures the AI produces world-class, thoroughly evaluated outputs.
 
 **Key Behaviors**:
+
 - Create an internal quality rubric with 5-7 categories
 - Think deeply about what makes an excellent solution
 - Use the rubric to evaluate and iterate on the solution internally
@@ -218,6 +239,7 @@ Before coding, always:
 - Don't show the rubric to users—it's for internal quality control
 
 **Example**:
+
 ```xml
 <self_reflection>
 - First, spend time thinking of a rubric until you are confident
@@ -231,9 +253,11 @@ Before coding, always:
 ---
 
 #### `<reasoning_effort>`
+
 **Purpose**: Controls how deeply the model thinks and analyzes before responding.
 
 **Key Behaviors**:
+
 - Scale reasoning effort based on task difficulty
 - Use **low** for simple, straightforward tasks
 - Use **medium** (default) for moderate complexity
@@ -242,11 +266,13 @@ Before coding, always:
 - Break separable tasks across multiple turns for peak performance
 
 **Reasoning Effort Levels**:
+
 - **Low**: Quick responses, simple tasks, well-defined problems
 - **Medium**: Balanced thinking for moderate complexity
 - **High**: Deep analysis, multi-step reasoning, complex problem-solving
 
 **When to Use High Reasoning**:
+
 - Code reviews requiring security and architecture analysis
 - Complex refactoring decisions
 - Multi-file impact analysis
@@ -254,6 +280,7 @@ Before coding, always:
 - System design and architecture decisions
 
 **Example**:
+
 ```xml
 <reasoning_effort>
 For this code review task requiring security analysis, architecture evaluation, and cross-file impact assessment, use HIGH reasoning effort to ensure comprehensive analysis across all dimensions.
@@ -263,9 +290,11 @@ For this code review task requiring security analysis, architecture evaluation, 
 ---
 
 #### `<code_editing_rules>`
+
 **Purpose**: Establishes comprehensive standards for code quality, structure, and user experience.
 
 **Key Behaviors**:
+
 - Follow guiding principles for clarity, reusability, and consistency
 - Adhere to specified technology stack defaults
 - Apply UI/UX best practices throughout implementation
@@ -274,6 +303,7 @@ For this code review task requiring security analysis, architecture evaluation, 
 **Subsections Explained**:
 
 **`<guiding_principles>`** - Core development philosophy:
+
 - **Clarity and Reuse**: Every component and page should be modular and reusable. Avoid duplication by factoring repeated UI patterns into components
 - **Consistency**: The user interface must adhere to a consistent design system—color tokens, typography, spacing, and components must be unified
 - **Simplicity**: Favor small, focused components and avoid unnecessary complexity in styling or logic
@@ -281,6 +311,7 @@ For this code review task requiring security analysis, architecture evaluation, 
 - **Visual Quality**: Follow high visual quality standards (spacing, padding, hover states, etc.)
 
 **`<frontend_stack_defaults>`** - Standard technology choices:
+
 - **Framework**: Next.js (TypeScript)
 - **Styling**: TailwindCSS
 - **UI Components**: shadcn/ui
@@ -289,6 +320,7 @@ For this code review task requiring security analysis, architecture evaluation, 
 - **Directory Structure**: Standardized organization with `/app`, `/components`, `/hooks`, `/lib`, `/stores`, `/types`, `/styles`
 
 **`<ui_ux_best_practices>`** - User experience guidelines:
+
 - **Visual Hierarchy**: Limit typography to 4–5 font sizes and weights for consistent hierarchy; use `text-xs` for captions and annotations; avoid `text-xl` unless for hero or major headings
 - **Color Usage**: Use 1 neutral base (e.g., `zinc`) and up to 2 accent colors for visual consistency
 - **Spacing and Layout**: Always use multiples of 4 for padding and margins to maintain visual rhythm. Use fixed height containers with internal scrolling when handling long content streams
@@ -296,6 +328,7 @@ For this code review task requiring security analysis, architecture evaluation, 
 - **Accessibility**: Use semantic HTML and ARIA roles where appropriate. Favor pre-built Radix/shadcn components, which have accessibility baked in
 
 **Example**:
+
 ```xml
 <code_editing_rules>
    <guiding_principles>
@@ -336,15 +369,18 @@ For this code review task requiring security analysis, architecture evaluation, 
 ---
 
 #### `<context_understanding>`
+
 **Purpose**: Ensures comprehensive context gathering before action.
 
 **Key Behaviors**:
+
 - If an edit may partially fulfill the query but you're not confident, gather more information
 - Bias towards not asking the user for help if you can find the answer yourself
 - Use available tools to understand the full context before making changes
 - Verify assumptions through exploration rather than guessing
 
 **Example**:
+
 ```xml
 <context_understanding>
 If you've performed an edit that may partially fulfill the user's query, but you're not confident, gather more information or use more tools before ending your turn.
@@ -545,16 +581,19 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 ### What This Means
 
 ✅ **You Can**:
+
 - Use these prompts for commercial projects
 - Modify and adapt prompts to your needs
 - Distribute original or modified versions
 
 ⚠️ **You Must**:
+
 - Disclose source and include license
 - Share modifications under the same GPL-3.0 license
 - State significant changes made to original prompts
 
 ❌ **You Cannot**:
+
 - Sublicense under different terms
 - Hold authors liable for damages
 
@@ -562,7 +601,7 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 
 See the [LICENSE](./LICENSE) file for complete terms and conditions.
 
-```
+```text
 Copyright (C) 2022-2025 flickleafy
 
 This program is free software: you can redistribute it and/or modify
@@ -576,7 +615,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 ```
 
-For more information: https://www.gnu.org/licenses/gpl-3.0.html
+For more information: <https://www.gnu.org/licenses/gpl-3.0.html>
 
 ---
 
@@ -584,7 +623,7 @@ For more information: https://www.gnu.org/licenses/gpl-3.0.html
 
 - **OpenAI GPT-5 Documentation**: [GPT-5 Prompting Guide](https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide)
 - **Code Review Best Practices**: [./code_review/code_review_prompts_summary.md](./code_review/code_review_prompts_summary.md)
-- **Language-Specific Prompts**: [./code_review/6-language-stack-specific/](./code_review/6-language-stack-specific/)
+- **Language-Specific Prompts**: [./code_review/06-language-stack-specific/](./code_review/6-language-stack-specific/)
 
 ---
 
@@ -609,6 +648,7 @@ This project is open-source and freely available under the GPL-3.0 license. If t
 **📝 Contribute** - Submit new prompts, improvements, or bug fixes
 
 **☕ Sponsor Development** - Financial contributions help maintain and expand the prompt library:
+
 - **GitHub Sponsors**: [Support via GitHub Sponsors](https://github.com/sponsors/flickleafy)
 - **Buy Me a Coffee**: One-time or recurring support for ongoing development
 - **Open Collective**: Transparent funding for community-driven improvements
