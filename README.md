@@ -108,13 +108,20 @@ The **[refactoring](./refactoring/)** directory contains 10+ specialized prompts
 8. **[Modularity & Decoupling](./refactoring/08-modularity-decoupling/prompt.md)** - Reduce coupling, increase cohesion, and define clear boundaries
 9. **[Modernization](./refactoring/09-modernization/prompt.md)** - Update to modern language features, APIs, and best practices
 10. **[Security Hardening](./refactoring/10-security-hardening/prompt.md)** - Fix vulnerabilities and apply OWASP security guidelines
+11. **[Comprehensive Refactoring](./refactoring/12-comprehensive-refactoring/prompt.md)** - Holistic multi-dimensional refactoring strategy
+12. **[Extract & Simplify](./refactoring/13-extract-and-simplify/prompt.md)** - Breaking down complex code using extraction techniques
+13. **[Legacy Modernization](./refactoring/14-legacy-modernization/prompt.md)** - Systematic transformation of legacy codebases
 
 #### Language & Stack-Specific Refactoring
 
-**[Language-Specific Prompts](./refactoring/11-language-stack-specific/)** (Coming Soon)
+**[Language-Specific Prompts](./refactoring/11-language-stack-specific/)**
 
-- Python, JavaScript/TypeScript, Java, C#, Go, Rust, Ruby, PHP
-- React, Angular, Vue, Spring Boot, Django, .NET refactoring patterns
+Available now:
+- **[Python Refactoring](./refactoring/11-language-stack-specific/python-refactoring.md)** - Pythonic patterns, type hints, modern features
+- **[JavaScript/TypeScript Refactoring](./refactoring/11-language-stack-specific/javascript-typescript-refactoring.md)** - ES6+, TypeScript migration, async patterns
+- **[React Refactoring](./refactoring/11-language-stack-specific/react-refactoring.md)** - Hooks migration, performance, modern patterns
+
+Coming soon: Java, C#, Go, Rust, Ruby, PHP, Angular, Vue, Spring Boot, Django, .NET
 
 📖 **[View Complete Refactoring Documentation](./refactoring/refactoring_prompts_summary.md)**
 

@@ -19,6 +19,9 @@ This document contains professional-grade prompts designed for AI-powered code r
 9. **[Modernization](./09-modernization/prompt.md)** - Update to modern language features and best practices
 10. **[Security Hardening](./10-security-hardening/prompt.md)** - Fix vulnerabilities and apply security best practices
 11. **[Language & Stack-Specific](./11-language-stack-specific/)** - Tailored refactoring for specific languages and frameworks
+12. **[Comprehensive Refactoring](./12-comprehensive-refactoring/prompt.md)** - Holistic multi-dimensional refactoring strategy
+13. **[Extract & Simplify](./13-extract-and-simplify/prompt.md)** - Breaking down complex code using extraction techniques
+14. **[Legacy Modernization](./14-legacy-modernization/prompt.md)** - Systematic transformation of legacy codebases
 
 ---
 

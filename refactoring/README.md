@@ -27,8 +27,17 @@ refactoring/
 │   └── prompt.md
 ├── 10-security-hardening/                   # Hardening through refactoring
 │   └── prompt.md
-└── 11-language-stack-specific/              # Language-specific refactoring
-    └── README.md
+├── 11-language-stack-specific/              # Language-specific refactoring
+│   ├── README.md
+│   ├── python-refactoring.md
+│   ├── javascript-typescript-refactoring.md
+│   └── react-refactoring.md
+├── 12-comprehensive-refactoring/            # Holistic multi-dimensional refactoring
+│   └── prompt.md
+├── 13-extract-and-simplify/                 # Breaking down complex code
+│   └── prompt.md
+└── 14-legacy-modernization/                 # Legacy code transformation
+    └── prompt.md
 ```
 
 ## 🚀 Quick Start
@@ -46,6 +55,9 @@ refactoring/
    - **Tight coupling?** → Use [08-modularity-decoupling](./08-modularity-decoupling/prompt.md)
    - **Outdated code?** → Use [09-modernization](./09-modernization/prompt.md)
    - **Security concerns?** → Use [10-security-hardening](./10-security-hardening/prompt.md)
+   - **Need holistic approach?** → Use [12-comprehensive-refactoring](./12-comprehensive-refactoring/prompt.md)
+   - **Complex code to simplify?** → Use [13-extract-and-simplify](./13-extract-and-simplify/prompt.md)
+   - **Legacy system to modernize?** → Use [14-legacy-modernization](./14-legacy-modernization/prompt.md)
 
 3. **Customize the prompt**: Replace `{PLACEHOLDERS}` with your code details
 
@@ -74,9 +86,15 @@ refactoring/
 - **Modernization**: Update to modern language features, APIs, and best practices
 - **Security Hardening**: Fix vulnerabilities, apply OWASP guidelines, implement security controls
 
+### Strategic Refactoring
+
+- **Comprehensive Refactoring**: Holistic approach addressing multiple quality dimensions
+- **Extract & Simplify**: Break down complex code using extraction techniques
+- **Legacy Modernization**: Systematic transformation of legacy systems
+
 ### Language-Specific
 
-- **Language & Stack-Specific**: Tailored refactoring for specific languages and frameworks
+- **Language & Stack-Specific**: Tailored refactoring for specific languages and frameworks (Python, JavaScript/TypeScript, React, and more)
 
 ## 🎯 Usage Patterns
 
