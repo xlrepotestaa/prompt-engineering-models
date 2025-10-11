@@ -92,16 +92,39 @@ The **[code_review](./code_review/)** directory contains 37+ specialized prompts
 
 📖 **[View Complete Code Review Documentation](./code_review/code_review_prompts_summary.md)**
 
+### Refactoring Prompts
+
+The **[refactoring](./refactoring/)** directory contains 10+ specialized prompts for systematic code improvement strategies:
+
+#### Core Refactoring Types (10 prompts)
+
+1. **[Code Smells Detection](./refactoring/01-code-smells-detection/prompt.md)** - Identify long methods, god classes, duplicated code, and other anti-patterns
+2. **[SOLID Principles](./refactoring/02-solid-principles/prompt.md)** - Enforce clean architecture principles (SRP, OCP, LSP, ISP, DIP)
+3. **[Design Patterns Application](./refactoring/03-design-patterns/prompt.md)** - Strategic application of proven design patterns (creational, structural, behavioral)
+4. **[Technical Debt Reduction](./refactoring/04-technical-debt/prompt.md)** - Systematic identification, quantification, and reduction of technical debt
+5. **[Performance Refactoring](./refactoring/05-performance-refactoring/prompt.md)** - Algorithmic optimization, database tuning, and resource management
+6. **[Testability Improvement](./refactoring/06-testability-improvement/prompt.md)** - Making code test-friendly through dependency injection and clear interfaces
+7. **[Readability Enhancement](./refactoring/07-readability-enhancement/prompt.md)** - Improve naming, structure, comments, and code flow
+8. **[Modularity & Decoupling](./refactoring/08-modularity-decoupling/prompt.md)** - Reduce coupling, increase cohesion, and define clear boundaries
+9. **[Modernization](./refactoring/09-modernization/prompt.md)** - Update to modern language features, APIs, and best practices
+10. **[Security Hardening](./refactoring/10-security-hardening/prompt.md)** - Fix vulnerabilities and apply OWASP security guidelines
+
+#### Language & Stack-Specific Refactoring
+
+**[Language-Specific Prompts](./refactoring/11-language-stack-specific/)** (Coming Soon)
+
+- Python, JavaScript/TypeScript, Java, C#, Go, Rust, Ruby, PHP
+- React, Angular, Vue, Spring Boot, Django, .NET refactoring patterns
+
+📖 **[View Complete Refactoring Documentation](./refactoring/refactoring_prompts_summary.md)**
+
 ### Future Prompt Collections
 
 This repository is designed to accommodate additional prompt collections:
 
-- **🔄 Refactoring Prompts** - Systematic code improvement strategies
 - **🧪 Testing Prompts** - Test generation and quality improvement
 - **📝 Documentation Prompts** - API docs, README, and technical writing
 - **🐛 Debugging Prompts** - Root cause analysis and troubleshooting
-- **⚡ Performance Prompts** - Profiling, optimization, and benchmarking
-- **🔐 Security Prompts** - Vulnerability scanning and hardening
 - **🏗️ Architecture Prompts** - System design and technical planning
 
 ---
