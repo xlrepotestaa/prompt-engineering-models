@@ -92,6 +92,39 @@ The **[code_review](./code_review/)** directory contains 37+ specialized prompts
 
 📖 **[View Complete Code Review Documentation](./code_review/code_review_prompts_summary.md)**
 
+---
+
+### Testing Prompts
+
+The **[testing](./testing/)** directory contains 12+ general testing prompts and framework-specific guides for comprehensive test generation and quality improvement:
+
+#### General Testing Prompts (12 prompts)
+
+1. **[Unit Test Generation](./testing/01-unit-test-generation/prompt.md)** - Generate comprehensive unit tests with edge cases and error handling
+2. **[Integration Test Generation](./testing/02-integration-test-generation/prompt.md)** - Create integration tests for APIs, databases, and services
+3. **[E2E Test Generation](./testing/03-e2e-test-generation/prompt.md)** - Build complete user workflow tests with Page Object Model
+4. **[Test Quality Assessment](./testing/04-test-quality-assessment/prompt.md)** - Evaluate test suite quality using F.I.R.S.T principles
+5. **[Coverage Gap Analysis](./testing/05-coverage-gap-analysis/prompt.md)** - Identify untested code paths and edge cases
+6. **[Test Refactoring](./testing/06-test-refactoring/prompt.md)** - Improve test readability, maintainability, and DRY
+7. **[Mock & Stub Strategy](./testing/07-mock-stub-strategy/prompt.md)** - Design effective mocking approaches for dependencies
+8. **[Test Data Factory](./testing/08-test-data-factory/prompt.md)** - Create test fixtures and data builders
+9. **[Flaky Test Diagnosis](./testing/09-flaky-test-diagnosis/prompt.md)** - Debug and fix unreliable tests
+10. **[Performance Testing](./testing/10-performance-testing/prompt.md)** - Load, stress, and benchmark testing strategies
+11. **[Security Testing](./testing/11-security-testing/prompt.md)** - Vulnerability scanning and penetration testing (OWASP)
+12. **[Accessibility Testing](./testing/12-accessibility-testing/prompt.md)** - WCAG compliance and a11y testing
+
+#### Language/Framework-Specific Testing (Framework-specific patterns)
+
+- **JavaScript/TypeScript**: Jest, Vitest, Mocha
+- **React**: React Testing Library
+- **Python**: pytest, unittest
+- **E2E Frameworks**: Cypress, Playwright
+- **Backend**: NestJS, Express + Supertest
+- **API**: REST, GraphQL testing
+
+📖 **[View Complete Testing Documentation](./testing/README.md)**
+
+---
 ### Refactoring Prompts
 
 The **[refactoring](./refactoring/)** directory contains 10+ specialized prompts for systematic code improvement strategies:
@@ -129,6 +162,7 @@ Coming soon: Java, C#, Go, Rust, Ruby, PHP, Angular, Vue, Spring Boot, Django, .
 
 This repository is designed to accommodate additional prompt collections:
 
+- **🔄 Refactoring Prompts** - Systematic code improvement strategies
 - **🧪 Testing Prompts** - Test generation and quality improvement
 - **📝 Documentation Prompts** - API docs, README, and technical writing
 - **🐛 Debugging Prompts** - Root cause analysis and troubleshooting
